@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">random</span>
+<span class="s0">import </span><span class="s1">turtle</span>
+<span class="s1">turtle.speed(</span><span class="s2">0</span><span class="s1">)</span>
+<span class="s1">turtle.colormode(</span><span class="s2">255</span><span class="s1">)</span>
+
+<span class="s0">def </span><span class="s1">random_color():</span>
+    <span class="s1">r = random.randint(</span><span class="s2">0</span><span class="s0">, </span><span class="s2">255</span><span class="s1">)</span>
+    <span class="s1">g = random.randint(</span><span class="s2">0</span><span class="s0">, </span><span class="s2">255</span><span class="s1">)</span>
+    <span class="s1">b = random.randint(</span><span class="s2">0</span><span class="s0">, </span><span class="s2">255</span><span class="s1">)</span>
+    <span class="s1">color = (r</span><span class="s0">, </span><span class="s1">g</span><span class="s0">, </span><span class="s1">b)</span>
+    <span class="s0">return </span><span class="s1">color</span>
+
+<span class="s0">for </span><span class="s1">_ </span><span class="s0">in </span><span class="s1">range(</span><span class="s2">10</span><span class="s1">):</span>
+    <span class="s0">for </span><span class="s1">colors </span><span class="s0">in </span><span class="s1">random_color():</span>
+        <span class="s1">turtle.color(random_color())</span>
+        <span class="s1">turtle.pensize(</span><span class="s2">20</span><span class="s1">)</span>
+        <span class="s1">turtle.left(</span><span class="s2">12</span><span class="s1">)</span>
+        <span class="s1">turtle.forward(</span><span class="s2">200</span><span class="s1">)</span>
+        <span class="s1">turtle.left(</span><span class="s2">90</span><span class="s1">)</span>
+        <span class="s1">turtle.forward(</span><span class="s2">200</span><span class="s1">)</span>
+        <span class="s1">turtle.left(</span><span class="s2">90</span><span class="s1">)</span>
+        <span class="s1">turtle.forward(</span><span class="s2">200</span><span class="s1">)</span>
+        <span class="s1">turtle.left(</span><span class="s2">90</span><span class="s1">)</span>
+        <span class="s1">turtle.forward(</span><span class="s2">200</span><span class="s1">)</span>
+        <span class="s1">turtle.left(</span><span class="s2">90</span><span class="s1">)</span>
+
+<span class="s1">screen = turtle.Screen()</span>
+<span class="s1">screen.exitonclick()</span>
+
+
+
+
+
+</pre>
+</body>
+</html>
